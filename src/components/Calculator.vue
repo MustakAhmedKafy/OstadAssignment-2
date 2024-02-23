@@ -31,15 +31,15 @@ const calculate = () => {
   <div>
     <h2>Calculator</h2>
     <div>
-      <input type="number" v-model="num1" placeholder="Enter number 1" />
-      <input type="number" v-model="num2" placeholder="Enter number 2" />
-      <select v-model="operator">
+      <input class="form-control mb-3" type="number" v-model="num1" placeholder="Enter number 1" />
+      <input class="form-control mb-3" type="number" v-model="num2" placeholder="Enter number 2" />
+      <select class="form-select mb-3" v-model="operator">
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
         <option value="/">/</option>
       </select>
-      <button @click="calculate">Calculate</button>
+      <button class="btn btn-primary" @click="calculate">Calculate</button>
     </div>
     <div v-if="result !== null">
       <p>Result: {{ result }}</p>

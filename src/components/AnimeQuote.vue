@@ -22,6 +22,6 @@ const fetchQuote = async () => {
       <p>Anime: {{ quoteData.anime }}</p>
       <p>Character: {{ quoteData.character }}</p>
     </div>
-    <button @click="fetchQuote">Get Quote</button>
+    <button class="btn btn-warning" @click="fetchQuote">Get Quote</button>
   </div>
 </template>
